@@ -1,0 +1,75 @@
+.dictionary {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .dictionary {
+    padding: 5%;
+    color: black;
+   
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+  
+  }
+  
+  .lookup {
+      background-color: #ffffff;
+      width: 80%;
+      top: 50%;
+      left: 50%;
+      padding: 8% 8%;
+      border-radius: 10px;
+      box-shadow: 0 20px 40px rgba(28, 43, 61, 0.2);
+  }
+  
+  .search-box {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+  }
+  
+  .search-box input {
+    padding: 3%;
+    border: none;
+    outline: none;
+    color: black;
+    border-bottom: 4px solid #228752;
+    font-size: 110%;
+  
+  }
+  
+  .search-box button {
+    background-color: green;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 4%;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .result h3 {
+      font-size: 30px;
+      color: #000000;
+  }
+  
+  .result .details {
+      display: flex;
+      gap: 10px;
+      color: #6ec99a;
+      margin: 5px 0 20px 0;
+      font-size: 14px;
+  }
+  
+  .word-meaning {
+      color: #228752;
+  }
+  
+  .word-example {
+      color: #6ec99a;
+      font-style: italic;
+      border-left: 5px solid #228752;
+      padding-left: 3%;
+  }
+   

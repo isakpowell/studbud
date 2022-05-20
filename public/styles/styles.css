@@ -1,0 +1,67 @@
+@import url(tasklist.css);
+@import url(stopwatch.css);
+@import url(dictionary.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+
+.main {
+  border-style: solid;
+  border-width: 5px;
+  border-color: red;
+}
+
+h1, h2, p, li {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Nav Bar */
+.logo-image {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+.nav {
+  border-style: solid;
+  border-width: 5px;
+  border-color: red;
+}
+
+
+
+.container {
+  height: 100%;
+}
+
+.nav ul {
+  font-weight: 300;
+  font-size: 1.5vmax;
+  list-style-type: none;
+  width: 80%;
+  height: 100%;
+  
+  
+}
+
+.nav li a {
+  display: block;
+  color: #FFFFFF;
+  padding: 10% 5%;
+  text-decoration: none;
+  position: relative;
+
+}
+
+.nav {
+  background-color: #228752;
+  height: 100%;
+  
+  
+}
+
+/* Nav Hover */
+li a:hover {
+  background-color: #103c1633;
+  color: #ffff
+  position: absolute;
+  border-radius: 25px;
+}

@@ -1,13 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudBud</title>
-    <link rel="stylesheet" href="styles/styles.scss" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    <h1>Hello World!</h1>
-</body>
-</html>
+  <div class="container">
+    <div class="nav">
+     <ul>
+        <a class="navbar-brand" href="index.html">   
+          <img src="studbud.png" class="logo-image" alt="ILF logo" >
+        </a>   
+        <li> <a href="index.html"> <i class='bx bx-task'></i> Task List </a> </li>
+        <li><a href="pomodoro.html"> <i class='bx bx-timer' ></i> Pomodoro Timer</a></li>
+        <li><a href="dictionary.html"><i class='bx bx-book-open' ></i> Dictionary Lookup</a></li>
+        <li><a href="music.html"><i class='bx bxs-music'></i> Music Player</a></li>
+        <li><a href="stopwatch.html"><i class='bx bxs-stopwatch' ></i> Stopwatch</a></li>
+      </ul> 
+    </div>
+    
+    <div class="main">
+     
+        <h1 class="moduletitle"> Tasks</h1>
+            <div id="task-grid">
+                <form id="taskform">
+                    <label for="task">Task:</label>
+                    <input type="text" name="task" id="taskInput" required>
+
+                    <!-- Date input -->
+                    <label for="dueDate">Due Date: </label>
+                    <input type="date" name="dueDate" id="dueDateInput">
+
+                    <!-- Time input -->
+                    <label for="completionTime">Completion Time: </label>
+                    <input type="time" name="completionTime" id="completionTimeInput">
+
+                    <label for="estimatedTime">Estimated completion time (in mins):</label>
+                    <input type="number" name="estimatedTime" id="estimatedTimeInput">
+                    <!-- Priority -->
+
+
+                    <label for="priority">Task Priority:</label>
+                    <select name="prority" id="priorityInput">
+                        <option value="">Select one</option>
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+
+                    <br>
+
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="tasklist">
+                    <p id="emptyList">You have not added any tasks yet.</p>
+                    <ul id="tasklist"></ul>
+                </div>
+            </div>
+
+    
+    </div>
+    
+    </div>
+    <script src="tasklist.js"></script>
+    </body>
+    </html>
