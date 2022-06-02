@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>StudBud</title>
+</head>
+  
+<body>
+    <div class="container">
+        <div class="nav">
+            <ul>
+               <a class="navbar-brand" href="index.html">   
+                 <img src="studbud.png" class="logo-image" alt="ILF logo" >
+               </a>   
+               <li> <a href="index.html"> <i class='bx bx-task'></i> Task List </a> </li>
+               <li><a href="pomodoro.html"> <i class='bx bx-timer' ></i> Pomodoro Timer</a></li>
+               <li><a href="dictionary.html"><i class='bx bx-book-open' ></i> Dictionary Lookup</a></li>
+               <li><a href="music.html"><i class='bx bxs-music'></i> Music Player</a></li>
+               <li><a href="stopwatch.html"><i class='bx bxs-stopwatch' ></i> Stopwatch</a></li>
+             </ul> 
+        </div>
+
+        <div class="main">
+            <h1 class="moduletitle">Pomodoro Timer</h1>
+            <div class="pomodoro">
+                <!--Work Timer-->
+                <div id="work-timer" class="timer">
+                <p id="work_minutes">25</p><p class="semicolon">:</p><p id="work_seconds">00</p>
+                </div>
+
+                <!--Break Timer-->
+                <div id="break-timer" class="timer">
+                    <p id="break_minutes">05</p><p class="semicolon">:</p><p id="break_seconds">00</p>
+                </div>
+                <button id="start" class="btn">Start</button>
+                <button id="stop" class="btn">Pause</button>
+                <button id="reset" class="btn">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="pomodoro.js"></script>
+</body>
+</html>

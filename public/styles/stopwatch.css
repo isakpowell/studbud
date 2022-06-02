@@ -1,25 +1,26 @@
   .watchbutton {
     border: none;
-    border-radius: 25px;
+    border-radius: 13px;
     padding: 18px 10px;
     font-size: 130%;
     width: 180px;
     margin: 10px;
+    background-color: #228752;
+    color: white;
   }
   
   .watchbutton:hover {
-   background-color: darkgreen;
+   background-color: rgb(19, 93, 19);
     cursor: pointer;
     
   }
-  
   
   .stopwatch {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 130%;
     list-style-type: none;
-    text-allign: center;
+    text-align: center;
   }
   
   #time {

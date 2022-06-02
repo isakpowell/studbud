@@ -1,6 +1,9 @@
 @import url(tasklist.css);
 @import url(stopwatch.css);
 @import url(dictionary.css);
+@import url(pomodoro.css);
+
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
 
@@ -26,8 +29,6 @@ h1, h2, p, li {
   border-color: red;
 }
 
-
-
 .container {
   height: 100%;
 }
@@ -38,8 +39,6 @@ h1, h2, p, li {
   list-style-type: none;
   width: 80%;
   height: 100%;
-  
-  
 }
 
 .nav li a {
@@ -54,14 +53,12 @@ h1, h2, p, li {
 .nav {
   background-color: #228752;
   height: 100%;
-  
-  
 }
 
-/* Nav Hover */
+/* Nav Hover
 li a:hover {
   background-color: #103c1633;
-  color: #ffff
+  color: #ffff;
   position: absolute;
   border-radius: 25px;
-}
+} */

@@ -21,8 +21,8 @@ button.addEventListener("click", function(event) {
   addTask(task, date, dueDate, priorityRating, ["1", "30"], false);
 
   // Log out the newly populated taskList everytime the button has been pressed
-  console.log(taskList);
-})
+  console.log(taskList);}
+)
 
 // Create an empty array to store our tasks
 var taskList = [];

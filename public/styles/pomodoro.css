@@ -1,0 +1,74 @@
+.pomodoro {
+    
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/*timers*/
+
+.timer {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+
+    font-size: 300%;
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*buttons*/
+
+.btn {
+    align-self: center;
+    justify-self: center;
+    background-color: #228752;
+    color: white;
+    cursor: pointer;
+    
+    border: none;
+    border-radius: 13px;
+    padding: 18px 10px;
+    font-size: 130%;
+    width: 180px;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: #0a3b21;
+    cursor: pointer;
+}
+
+
+/* positioning */
+
+#work-timer {
+    grid-area: 2 / 2 / 2 / 2;
+}
+
+#break-timer {
+    grid-area: 2 / 4 / 2 / 4;
+}
+
+
+/* . */
+
+#start {
+    grid-area: 3 / 2 / 3 / 2;
+}
+
+#reset {
+    grid-area: 3 / 3 / 3 / 3;
+}
+
+#stop {
+    grid-area: 3 / 4 / 3 / 4;
+}
