@@ -40,7 +40,7 @@ function addTask(taskDescription, createdDate, dueDate, priorityRating, estimate
   // Add the task to our array of tasks
   taskList.push(task);
 
-  // Separate the DOM manipulation from the object creation logic
+  //displaying task
   renderTask(task);
 }
 
@@ -48,7 +48,7 @@ function addTask(taskDescription, createdDate, dueDate, priorityRating, estimate
 // Function to display the item on the page
 function renderTask(task) {
   let item = document.createElement("li");
-  
+  //taking use of inner html to line break elements
   item.innerHTML = "<p>" + task.taskDescription + "</br>" + task.dueDate + "</br>" + task.priorityRating + "</br>" + task.createdDate;
 
   tasklist.appendChild(item);
@@ -61,8 +61,7 @@ function renderTask(task) {
 
   // Listen for when the 
   delButton.addEventListener("click", function(event){
-    item.remove(); // Remove the task item from the page when button clicked
-    // Because we used 'let' to define the item, this will always delete the right element
+    item.remove(); 
   })
   
   // Clear the value of the input once the task has been added to the page

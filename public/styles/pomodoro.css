@@ -39,6 +39,7 @@ p {
     margin: 10px;
 }
 
+
 .btn:hover {
     background-color: #154c2f;
     cursor: pointer;
@@ -46,7 +47,7 @@ p {
 }
 
 
-/* positioning */
+/* positioning variables for display : grid setup*/
 
 #work-timer {
     grid-area: 2 / 2 / 2 / 2;

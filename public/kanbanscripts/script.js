@@ -1,5 +1,5 @@
 //script for TODO
-
+//code for script, script1, script2, script3 is identical however they have certain different varaiable names
 
 const notesContainer = document.getElementById("kanban0");
 const addNoteButton = notesContainer.querySelector(".createKanban");
@@ -15,6 +15,7 @@ function kanbanNotes() {
   return JSON.parse(localStorage.getItem("kanban-notes") || "[]");
 }
 
+//saving notes to localstorage in kanban-notes (all same with other scripts)
 function saveNotes(notes) {
   localStorage.setItem("kanban-notes", JSON.stringify(notes));
 }
@@ -30,6 +31,8 @@ function kanbanComponent(id, content) {
     updateNote(id, element.value);
   });
 
+  //double click delete funtion embedded into the browser
+  //some browsers dont support this
   element.addEventListener("dblclick", () => {
     const doDelete = confirm(
       "Do you want to delete this sticky note?"
@@ -43,6 +46,7 @@ function kanbanComponent(id, content) {
   return element;
 }
 
+//creating kanban 
 function createKanban() {
   const notes = kanbanNotes();
   const noteObject = {
@@ -57,6 +61,9 @@ function createKanban() {
   saveNotes(notes);
 }
 
+//updating note once cursor has exited out of it 
+//this will trigger saveNotes
+//then this will update localstorage
 function updateNote(id, newContent) {
   const notes = kanbanNotes();
   const targetNote = notes.filter((note) => note.class == id)[0];
@@ -64,6 +71,7 @@ function updateNote(id, newContent) {
   targetNote.content = newContent;
   saveNotes(notes);
 }
+
 
 function deleteNote(id, element) {
   const notes = kanbanNotes().filter((note) => note.class != id);

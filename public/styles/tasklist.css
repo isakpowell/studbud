@@ -5,8 +5,7 @@ html, body {
   height: 100%;
 }
 
-/* TaskList */
-
+/* TaskList CSS Styalization*/
 
 .moduletitle {
   font-family: sans-serif;
@@ -54,7 +53,7 @@ html, body {
   font-family: 'Open Sans', sans-serif;
   border-radius: 10px;
 }
-
+/* taking use of simple hover implementaions */
 #taskSubmit:hover {
   background-color: #1f6541;  /* Green */
   cursor: pointer;
@@ -67,7 +66,7 @@ html, body {
   font-size: 1.4rem;
   padding-top: 4%;
 }
-
+/* container div setup for positioning elements */
 .container {
   display: grid; 
   grid-template-columns: 0.8fr 1fr 1fr; 
@@ -81,5 +80,3 @@ html, body {
 .nav { grid-area: nav; }
 .main { grid-area: main; }
 
-
-/*stop watch */

@@ -7,7 +7,7 @@ var workSeconds = document.getElementById('work_seconds');
 
 var breakMinutes = document.getElementById('break_minutes');
 var breakSeconds = document.getElementById('break_seconds');
-
+//all my time variables
 //store a reference to a timer variable
 var startTimer;
 
