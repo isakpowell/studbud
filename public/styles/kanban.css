@@ -1,0 +1,77 @@
+/* Double click to delete kanban */
+body {
+    margin: 0;
+  }
+
+    #kanban0 , #kanban1, #kanban2, #kanban3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    gap: 7%;
+    padding: 3%;
+  }
+
+  .kanbanTitle {
+    text-align: center;
+    font-size: 150%;
+    width: 100%;
+  }
+
+  .In-Progress, .Finished {
+      background-color: rgba(69, 186, 69, 0.137);
+      border-radius: 10px;
+      height: 200%;
+  }
+  
+  .note {
+    height: 150px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 7px #100f1022;
+    font-size: 16px;
+  }
+  
+  .createKanban {
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 100px;
+    cursor: pointer;
+  }
+  
+  .createKanbanProgress {
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 100px;
+    cursor: pointer;
+  }
+  
+  .createKanban:hover {
+    background: grey;
+    transition: background 0.2s;
+  }
+  
+  .containerKanban {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "To-do In-Progress Review Finished"
+      "To-do In-Progress Review Finished"
+      "To-do In-Progress Review Finished";
+  }
+  
+  .To-do { grid-area: To-do; }
+  
+  .In-Progress { grid-area: In-Progress; }
+  
+  .Review { grid-area: Review; }
+  
+  .Finished { grid-area: Finished; }
+  
+  
+
+  
