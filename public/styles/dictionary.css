@@ -1,10 +1,9 @@
-.dictionary {
-    font-family: 'Poppins', sans-serif;
-  }
+
   
   .dictionary {
     padding: 5%;
     color: black;  
+    font-family: 'Poppins', sans-serif;
   }
   
   .lookup {
@@ -17,14 +16,14 @@
       box-shadow: 0 20px 40px rgba(28, 43, 61, 0.2);
   }
   
-  .search-box {
+  .searchBox {
       width: 100%;
       display: flex;
       justify-content: space-between;
       font-size: 16px;
   }
   
-  .search-box input {
+  .searchBox input {
     padding: 3%;
     border: none;
     outline: none;
@@ -34,7 +33,7 @@
   
   }
   
-  .search-box button {
+  .searchBox button {
     background-color: #228752;
     border: none;
     outline: none;
@@ -44,7 +43,7 @@
     cursor: pointer;
   }
 
-  .search-box button:hover {
+  .searchBox button:hover {
     background-color: #154c2f;
     cursor: pointer;
     transition: background-color 0.2s;
