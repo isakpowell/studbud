@@ -30,7 +30,7 @@ h1, h2, p, li {
 
 .nav ul {
   font-weight: 300;
-  font-size: 1.5vmax;
+  font-size: 20px;
   list-style-type: none;
   width: 80%;
   height: 100%;
@@ -44,6 +44,10 @@ h1, h2, p, li {
   position: relative;
 }
 
+p {
+  display: inline;
+}
+
 .nav {
   background-color: #228752;
   height: 100%;
@@ -55,4 +59,16 @@ li a:hover {
   color: #ffff;
   border-radius: 20px;
   transition: background-color 0.2s;
+}
+
+
+/* Responsive side bar */
+@media only screen and (max-width: 600px) {
+  .navtext {
+      display: none;
+  }
+
+  .nav ul {
+    font-size: 35px;
+  }
 }

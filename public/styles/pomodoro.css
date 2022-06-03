@@ -13,7 +13,6 @@
     display: flex;
     align-self: center;
     justify-self: center;
-
     font-size: 400%;
     font-weight: bold;
     padding-bottom: 10%;
@@ -34,7 +33,6 @@ p {
     background-color: #228752;
     color: white;
     cursor: pointer;
-    
     border: none;
     border-radius: 13px;
     padding: 18px 10px;

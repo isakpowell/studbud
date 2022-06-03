@@ -10,6 +10,7 @@ Overall my StudBud study web app had a variety of changes compared to my mockups
 * Separating the ‘Task List’ and ‘Kanban Board’ into separate components for **the key purpose of flexibility of adding tasks**. e.g. The Task List is for short-term tasks, Kanban Board is for long-term tasks.
 * Changing pop up stopwatch and music player to separate pages for the **key purpose of minimizing distractions**
 * Various aesthetical changes from mockups, mainly due to my css coding abilities, and me rethinking the aesthetic design
+* New **resposive** navigation panel and overall a new aesthetic
 
 ## Task List
 
@@ -81,6 +82,8 @@ New:
 
 ## Kanban Board:
 The Kanban Board was definitely the most difficult section of this WebApp. To accomplish my desired kanban board I need to reference this amazing HTML note tutorial which thoroughly explains the js coding process to make html notes that are saved to local storage. This was essential to the development of my kanban board (dcode, 2021) and a **major help to my Javascript**. 
+
+Double click to delete kanban note
 ### Changes from mockups:
 Overall, my kanban board stayed almost identical to my mockups, however, there were a few minor aesthetical changes due to the transfer to CSS code. Although a massive differentiator from my mockups is that my ‘Kanban Board’ and ‘Task List’ were combined into one. I made the design decision for separating these because it would allow the user more flexibility in adding tasks.
 
