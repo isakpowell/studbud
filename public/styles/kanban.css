@@ -52,7 +52,7 @@ body {
     background: rgba(128, 128, 128, 0.539);
     transition: background 0.2s;
   }
-  
+  /* setup for display : grid */
   .containerKanban {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -73,6 +73,7 @@ body {
   .Finished { grid-area: Finished; }
   
   /* Responsive design for kanban board */
+  /* Shifting to a block display to stack elements */
   @media only screen and (max-width: 600px) {
     .containerKanban {  display: block;
       grid-template-columns: 1fr;
