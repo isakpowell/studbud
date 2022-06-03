@@ -8,15 +8,17 @@ window.onload = function(){
     var buttonReset = document.getElementById("btn-reset");
     var Interval;
 
+    //all my variables declared
+
     buttonStart.addEventListener('click', () => {
         clearInterval(Interval);
-        Interval = setInterval(startTimer, 10);  // millisecond 10 = 0.01 second
+        Interval = setInterval(startTimer, 10);  
     });
-
+//event listening for lick to start the timer
     buttonStop.addEventListener('click', () => {
         clearInterval(Interval);
     });
-
+//for stopping the timer
     buttonReset.addEventListener('click', () => {
         clearInterval(Interval);
         tens = "00";
@@ -24,7 +26,9 @@ window.onload = function(){
         OutputSeconds.innerHTML = seconds;
         OutputTens.innerHTML = tens;
     });
+//reset the timer
 
+//Time logic
     function startTimer(){
         tens++;
         if(tens <= 9){
