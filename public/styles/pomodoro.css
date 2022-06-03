@@ -14,8 +14,9 @@
     align-self: center;
     justify-self: center;
 
-    font-size: 300%;
+    font-size: 400%;
     font-weight: bold;
+    padding-bottom: 10%;
 }
 
 p {
@@ -43,8 +44,9 @@ p {
 }
 
 .btn:hover {
-    background-color: #0a3b21;
+    background-color: #154c2f;
     cursor: pointer;
+    transition: background-color 0.2s;
 }
 
 
@@ -72,3 +74,4 @@ p {
 #stop {
     grid-area: 3 / 4 / 3 / 4;
 }
+

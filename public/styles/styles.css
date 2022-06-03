@@ -47,7 +47,6 @@ h1, h2, p, li {
   padding: 10% 5%;
   text-decoration: none;
   position: relative;
-
 }
 
 .nav {
@@ -55,10 +54,9 @@ h1, h2, p, li {
   height: 100%;
 }
 
-/* Nav Hover
 li a:hover {
   background-color: #103c1633;
   color: #ffff;
-  position: absolute;
-  border-radius: 25px;
-} */
+  border-radius: 20px;
+  transition: background-color 0.2s;
+}

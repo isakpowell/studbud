@@ -10,9 +10,9 @@
   }
   
   .watchbutton:hover {
-   background-color: rgb(19, 93, 19);
+    background-color: #154c2f;
     cursor: pointer;
-    
+    transition: background-color 0.2s;
   }
   
   .stopwatch {
@@ -24,5 +24,6 @@
   }
   
   #time {
-    font-size: 200%;
+    font-size: 350%;
+    padding-bottom: 10%;
   }
